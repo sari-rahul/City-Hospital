@@ -20,7 +20,7 @@ def doctors(request):
     dict_docs = {
         'docs': Doctors.objects.all()
     }
-    return render(request, 'doctors.html',dict_docs)
+    return render(request, 'doctors.html', dict_docs)
 
 
 def contact(request):
