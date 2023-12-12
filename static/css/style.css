@@ -1,0 +1,19 @@
+li:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+li .active {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.carousel .carousel-item {
+    height: 500px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: contain;
+    top: 0;
+    left: 0;
+    min-height: 600px;
+}
