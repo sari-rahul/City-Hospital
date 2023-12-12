@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Departments
+from .models import Departments, Doctors
 
 # Create your views here.
 
@@ -17,7 +17,10 @@ def booking(request):
 
 
 def doctors(request):
-    return render(request, 'doctors.html')
+    dict_docs = {
+        'docs': Doctors.objects.all()
+    }
+    return render(request, 'doctors.html',dict_docs)
 
 
 def contact(request):
