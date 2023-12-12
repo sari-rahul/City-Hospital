@@ -19,4 +19,8 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),
-]+static( settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+# set url for user uploaded content
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# set url for static files
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
