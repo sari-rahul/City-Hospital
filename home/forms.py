@@ -13,3 +13,13 @@ class BookingForm(forms.ModelForm):
         widgets = {
             'booking_date': DateInput()
         }
+        labels = {
+            'p_name': "Patient's Name",
+            'p_email': "Patient's Email",
+            'p_phone': "Patient's Phone number",
+            'doc_name': "Doctor's Name",
+            'booking_date': "Booking Date",
+        }
+
+
+       
