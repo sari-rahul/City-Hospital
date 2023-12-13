@@ -1,12 +1,15 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+
 {% block title %}Booking {% endblock %}
 {% block content%}
 <h1 class="text-center p-3">Make an Appointment</h1>
 <hr>
 <div class="container w-50 text-center p-3">
     <form action="">
-        {{ form.as_p }}
+        {{form|crispy}}
     </form>
-    <button type="submit"> Submit </button>
+    <button type="submit">submit</button>
 </div>
 {% endblock %}
