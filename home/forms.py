@@ -11,5 +11,5 @@ class BookingForm(forms.ModelForm):
         model = Bookings
         fields = '__all__'
         widgets = {
-            'booking_date' : DateInput()
+            'booking_date': DateInput()
         }
