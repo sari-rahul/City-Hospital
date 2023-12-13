@@ -1,0 +1,1 @@
+web: gunicorn city_hospital.wsgi
