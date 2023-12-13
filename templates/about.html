@@ -1,5 +1,23 @@
 {% extends "base.html" %} 
 {% block title %}About {% endblock %} 
 {% block content%}
-<h1>About</h1>
+{% load static %}
+    
+    <img src="{% static 'images/about_banner.jpg'%}" class=" d-block w-100 about-image " alt="...">
+    <h2 class="p-3">About Us</h2>
+    
+    <div class="container h-50">
+        <h4 class="font-weight-bold">"A Hospital in search of new horizons in medical care with social commitment"</h4>
+        <br>
+        <p class="p-3">25 years have elapsed since we commenced our journey in the field of health care service. From the very inception,
+        City Hospital has bestowed utmost care and dedication to the patients and clients. Turning back, we realise with
+        gratitude that our clients had recognised our sincerity and dedication to the cause. Without their confidence and
+        support we would not have become what we are today. From humble beginnings, the growth of City Hospital had been
+        remarkable. We have bloomed into a multi – specialty, 300 bedded -hospital with all the latest and most advanced
+        diagnostic and treatment facilities. City Hospital stands out as the only hospital in Malabar equipped with
+        electro physiological studies (E.P. Study). Highly skilled and all- inclusive medical and surgical specialties is the
+        hall mark of our hospital. Along with our well – renowned, traditional Gynecology department we have a fully equipped
+        and advanced department for Cardiac and Thoracic ailments to undertake all types of investigations and surgeries. 
+        </p>
+    </div>
 {% endblock %}

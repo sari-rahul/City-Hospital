@@ -4,7 +4,7 @@
 {% block content%}
 
 {% load static %}
-<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div id="carouselExampleDark" class="carousel carousel-dark slide " data-bs-ride="carousel">
     <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -13,7 +13,7 @@
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
     </div>
-    <div class="carousel-inner">
+    <div class="carousel-inner ">
         <div class="carousel-item active " data-bs-interval="10000">
             <img src="{% static 'images/car5.jpg'%}" class=" d-block w-100 " alt="...">
         </div>
@@ -43,6 +43,21 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
+    </div>
+    <div class="container">
+        <div>
+            <h3>Who we are</h3>
+            <hr>
+            <p>25 years have elapsed since we commenced our journey in the field of health care service. From the very inception,
+            Valluvanad Hospital has bestowed utmost care and dedication to the patients and clients. Turning back, we realise with
+            gratitude that our clients had recognised our sincerity and dedication to the cause. Without their confidence and
+            support we would not have become what we are today. From humble beginnings, the growth of Valluvanad Hospital had been
+            remarkable. We have bloomed into a multi – specialty, 300 bedded -hospital with all the latest and most advanced
+            diagnostic and treatment facilities. Valluvanad Hospital stands out as the only hospital in Malabar equipped with
+            electro physiological studies (E.P. Study). Highly skilled and all- inclusive medical and surgical specialties is the
+            hall mark of our hospital.</p>
+        </div>
+        
     </div>
 
 {% endblock %}
