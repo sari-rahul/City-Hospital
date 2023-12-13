@@ -1,5 +1,12 @@
 {% extends "base.html" %}
 {% block title %}Booking {% endblock %}
 {% block content%}
-<h1>Booking</h1>
+<h1 class="text-center p-3">Make an Appointment</h1>
+<hr>
+<div class="container w-50 text-center p-3">
+    <form action="">
+        {{ form.as_p }}
+    </form>
+    <button type="submit"> Submit </button>
+</div>
 {% endblock %}
