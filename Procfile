@@ -1,1 +1,1 @@
-web: gunicorn city_hospital.wsgi
+web: gunicorn django_todo.wsgi:application
