@@ -1,1 +1,1 @@
-web: gunicorn cityhospital.wsgi
+web: gunicorn city_hospital.wsgi
