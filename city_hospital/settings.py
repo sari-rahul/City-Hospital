@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','cityhospital.herokuapp.com']
+ALLOWED_HOSTS = ['localhost','cityhospital.herokuapp.com','8000-sari-rahul-city-hospital-lctm23fv7k.us2.codeanyapp.com']
 
 
 # Application definition
@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'home',
     "crispy_forms",
-    "crispy_bootstrap4",
+    "crispy_bootstrap3",
 ]
 
 MIDDLEWARE = [
@@ -138,3 +138,5 @@ STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
